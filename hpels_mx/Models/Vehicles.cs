@@ -7,8 +7,7 @@
         public string Vin { get; set; }
         public string Color { get; set; }
         public int Year { get; set; }
-
-        public Owners owner_id { get; set; }
+        public Owners Owner_id { get; set; }
         public ICollection<Claims> Claims { get; set; }
     }
 }
