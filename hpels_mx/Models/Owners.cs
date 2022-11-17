@@ -7,5 +7,7 @@
         public string LastName { get; set; }
         public string DriverLicense { get; set; }
 
+        public ICollection<Vehicles> Vehicles { get; set; }
+
     }
 }
