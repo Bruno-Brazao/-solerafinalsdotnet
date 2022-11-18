@@ -51,7 +51,8 @@ namespace hpels_mx.Controllers
             claim.Description = claimData.Description;
             claim.Status = claimData.Status;
             claim.Date = claimData.Date;
-            claim.Vehicle_id = claimData.Vehicle_id;
+            claim.Vehicle = claimData.Vehicle;
+            claim.VehicleId = claimData.VehicleId;
             await _context.SaveChangesAsync();
             return Ok();
         }

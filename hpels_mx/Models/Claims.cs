@@ -6,6 +6,8 @@
         public string Description { get; set; }
         public Boolean Status { get; set; }
         public DateTime Date { get; set; }
-        public Vehicles Vehicle_id { get; set; }
+
+        public int? VehicleId { get; set; }
+        public Vehicles Vehicle { get; set; }
     }
 }

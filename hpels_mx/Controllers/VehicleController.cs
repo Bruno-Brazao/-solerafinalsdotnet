@@ -48,10 +48,11 @@ namespace hpels_mx.Controllers
             if (vehicle == null)
                 return NotFound();
             vehicle.Brand = vehicleData.Brand;
-            vehicle.Vin= vehicleData.Vin;
+            vehicle.Vin = vehicleData.Vin;
             vehicle.Color = vehicleData.Color;
             vehicle.Year = vehicleData.Year;
-            vehicle.Owner_id = vehicleData.Owner_id;
+            vehicle.Owner = vehicleData.Owner;
+            vehicle.OwnerId = vehicleData.OwnerId;
             vehicle.Claims = vehicleData.Claims;
             await _context.SaveChangesAsync();
             return Ok();
