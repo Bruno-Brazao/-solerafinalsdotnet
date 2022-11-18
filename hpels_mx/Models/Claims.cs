@@ -2,12 +2,12 @@
 {
     public class Claims
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Description { get; set; }
-        public Boolean Status { get; set; }
+        public bool Status { get; set; }
         public DateTime Date { get; set; }
 
-        public int? VehicleId { get; set; }
-        public Vehicles Vehicle { get; set; }
+        public int VehicleId { get; set; }
+        public Vehicles? Vehicle { get; set; }
     }
 }
