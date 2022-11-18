@@ -20,7 +20,7 @@ namespace hpels_mx.Controllers
         }
 
         // GET: Vehicles
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? id)
         {
             var hpelsmxDbContext = _context.Vehicles.Include(v => v.Owner);
             return View(await hpelsmxDbContext.ToListAsync());
