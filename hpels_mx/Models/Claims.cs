@@ -8,6 +8,6 @@
         public DateTime Date { get; set; }
 
         public int VehicleId { get; set; }
-        public Vehicles? Vehicle { get; set; }
+        public Vehicles? Vehicle;
     }
 }

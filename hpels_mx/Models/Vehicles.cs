@@ -9,7 +9,7 @@
         public int Year { get; set; }
 
         public int OwnerId { get; set; }
-        public Owners? Owner { get; set; }
+        public Owners? Owner;
         public ICollection<Claims>? Claims;
     }
 }
