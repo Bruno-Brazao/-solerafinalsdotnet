@@ -3,7 +3,7 @@ using hpels_mx.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace hpels_mx.Controllers
+namespace hpels_mx.Controllers.Api
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -22,17 +22,16 @@ namespace hpels_mx.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<Object> Get(int id)
+        public async Task<object> Get(int id)
         {
             var vehicle = await _context.Vehicles.FirstOrDefaultAsync(m => m.Id == id);
             if (vehicle == null)
                 return NotFound();
-            vehicle.Owner = _context.Owners.FirstOrDefault(t => t.Id == vehicle.OwnerId);
             return Ok(vehicle);
         }
 
         [HttpPost]
-        public async Task<Object> Post(Vehicles vehicle)
+        public async Task<object> Post(Vehicles vehicle)
         {
             _context.Add(vehicle);
             await _context.SaveChangesAsync();
@@ -40,7 +39,7 @@ namespace hpels_mx.Controllers
         }
 
         [HttpPut]
-        public async Task<Object> Put(Vehicles vehicleData)
+        public async Task<object> Put(Vehicles vehicleData)
         {
             if (vehicleData == null || vehicleData.Id == 0)
                 return BadRequest();
@@ -60,7 +59,7 @@ namespace hpels_mx.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<Object> Delete(int id)
+        public async Task<object> Delete(int id)
         {
             var vehicle = await _context.Vehicles.FindAsync(id);
             if (vehicle == null) return NotFound();
