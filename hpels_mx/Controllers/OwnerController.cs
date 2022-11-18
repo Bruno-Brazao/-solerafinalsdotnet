@@ -38,5 +38,34 @@ namespace hpels_mx.Controllers
             await _context.SaveChangesAsync();
             return Ok();
         }
+
+        [HttpPut]
+        public async Task<Object> Put(Owners ownerData)
+        {
+            if (ownerData == null)
+                return BadRequest();
+
+            var product = await _context.Owners.FindAsync(ownerData.Id);
+            if (product == null)
+                return NotFound();
+            product.FirstName = ownerData.FirstName;
+            product.LastName = ownerData.LastName;
+            product.DriverLicense = ownerData.DriverLicense;
+            product.Vehicles = ownerData.Vehicles;
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<Object> Delete(int id)
+        {
+            var product = await _context.Owners.FindAsync(id);
+            if (product == null)
+                return NotFound();
+            _context.Owners.Remove(product);
+            await _context.SaveChangesAsync();
+            return Ok();
+
+        }
     }
 }
