@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sYX4MK7qFeJbn2mqcvnRXoKlwjK0MKnLdAl8nE02fm8xwXIRf4qVM/iyT60SpjUduv0OUvDMqcwjIpFaw4lZZg==",
+  "dgSpecHash": "sWm+ZZxewUVyROG1yQEkeDnWbwA0Ufx9tn2xGezHL8j/w8lE8LwsuuS7RA6CeW7cpYUBtAv1pqY8veQn8BaIkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jose.Azebedo\\VisualProjects\\hpels_mx\\hpels_mx.csproj",
+  "projectFilePath": "C:\\Users\\Jose.Azebedo\\IdeaProjects\\Finals\\solerafinalsdotnet\\hpels_mx\\hpels_mx.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jose.Azebedo\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Jose.Azebedo\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

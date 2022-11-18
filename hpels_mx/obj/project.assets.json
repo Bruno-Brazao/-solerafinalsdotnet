@@ -3936,11 +3936,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose.Azebedo\\VisualProjects\\hpels_mx\\hpels_mx.csproj",
+      "projectUniqueName": "C:\\Users\\Jose.Azebedo\\IdeaProjects\\Finals\\solerafinalsdotnet\\hpels_mx\\hpels_mx.csproj",
       "projectName": "hpels_mx",
-      "projectPath": "C:\\Users\\Jose.Azebedo\\VisualProjects\\hpels_mx\\hpels_mx.csproj",
+      "projectPath": "C:\\Users\\Jose.Azebedo\\IdeaProjects\\Finals\\solerafinalsdotnet\\hpels_mx\\hpels_mx.csproj",
       "packagesPath": "C:\\Users\\Jose.Azebedo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose.Azebedo\\VisualProjects\\hpels_mx\\obj\\",
+      "outputPath": "C:\\Users\\Jose.Azebedo\\IdeaProjects\\Finals\\solerafinalsdotnet\\hpels_mx\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jose.Azebedo\\AppData\\Roaming\\NuGet\\NuGet.Config",
