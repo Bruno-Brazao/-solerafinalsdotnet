@@ -10,6 +10,6 @@
 
         public int OwnerId { get; set; }
         public Owners? Owner { get; set; }
-        public ICollection<Claims>? Claims { get; set; }
+        public ICollection<Claims>? Claims;
     }
 }

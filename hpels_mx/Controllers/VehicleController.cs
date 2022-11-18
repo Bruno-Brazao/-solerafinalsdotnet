@@ -27,6 +27,7 @@ namespace hpels_mx.Controllers
             var vehicle = await _context.Vehicles.FirstOrDefaultAsync(m => m.Id == id);
             if (vehicle == null)
                 return NotFound();
+            vehicle.Owner = _context.Owners.FirstOrDefault(t => t.Id == vehicle.OwnerId);
             return Ok(vehicle);
         }
 

@@ -6,7 +6,7 @@
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string DriverLicense { get; set; }
-        public ICollection<Vehicles>? Vehicles { get; set; }
 
+        public ICollection<Vehicles>? Vehicles;
     }
 }
